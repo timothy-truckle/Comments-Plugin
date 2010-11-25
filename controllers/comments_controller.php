@@ -56,4 +56,3 @@ class CommentsController extends CommentsAppController {
 	}
 
 }
-?>

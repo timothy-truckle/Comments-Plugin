@@ -26,4 +26,3 @@ class Comment extends CommentsAppModel {
 			)
 	);
 }
-?>
