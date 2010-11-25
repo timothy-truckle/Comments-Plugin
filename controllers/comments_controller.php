@@ -2,12 +2,12 @@
 class CommentsController extends CommentsAppController {
 
 	var $name = 'Comments';
-	var $helpers = array('Html', 'Form', 'Ajax', 'Time');
+	var $helpers = array('Html', 'Form', 'Js', 'Time');
 	var $components = array('RequestHandler');
 
 	function beforeFilter() {
 		parent::beforeFilter();
-		$this->LoadsysAuth->allow('index', 'add');
+		$this->Auth->allow('index');
 	}
 
 	function index($model, $id) {
